@@ -158,6 +158,7 @@ class ProductItemDetails extends Component {
             </div>
           </div>
         </div>
+        {this.renderSimilarProducts()}
       </>
     )
   }
@@ -185,10 +186,10 @@ class ProductItemDetails extends Component {
   renderSimilarProducts = () => {
     const {productDetails} = this.state
 
-    console.log(productDetails.similarProducts)
     return (
       <>
-        <ul>
+        <h1 className="similar-main-heading">Similar Products</h1>
+        <ul className="similar-container">
           {productDetails.similarProducts.map(each => (
             <SimilarProductItem similarDetails={each} key={each.id} />
           ))}

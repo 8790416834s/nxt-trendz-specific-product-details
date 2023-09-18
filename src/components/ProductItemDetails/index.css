@@ -80,3 +80,9 @@
   color: #ffffff;
   border-width: 0px;
 }
+.similar-container {
+  display: flex;
+}
+.similar-main-heading {
+  margin-left: 50px;
+}
